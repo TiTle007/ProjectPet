@@ -1,10 +1,11 @@
 
 <template>
     <div>
+        <p><h1>Project สัตว์เลี้ยง</h1></p>
         <h1>User Login</h1>
         <form v-on:submit.prevent="onLogin">
-            <p>Username: <input type="text" v-model="email" /></p>
-            <p>Password: <input type="password" v-model="password" /></p>
+            <p>Email : <input type="text" v-model="email" /></p>
+            <p>Password : <input type="password" v-model="password" /></p>
             <p><button type="submit">Login</button></p>
             <div class="error" v-if="error">{{ error }}</div>
         </form>
